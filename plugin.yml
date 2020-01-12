@@ -11,56 +11,56 @@ website: https://github.com/alejandroliu/pocketmine-plugins/tree/master/WorldPro
 commands:
   worldprotect:
     description: Manage worlds
-    usage: "/wp <help|sub-cmd> [options]"
-    permission: wp.cmd.all
-    aliases: [wp]
+    usage: "/sc <help|sub-cmd> [options]"
+    permission: sc.cmd.all
+    aliases: [Security]
 
 permissions:
-  wp.motd:
+  sc.motd:
     default: true
     description: "Display MOTD"
-  wp.cmd.all:
+  sc.cmd.all:
     default: op
     description: "Allow access to protect command"
-  wp.cmd.protect:
+  sc.cmd.protect:
     default: op
     description: "Change protect mode"
-  wp.cmd.protect.auth:
+  sc.cmd.protect.auth:
     default: op
     description: "Permit place/destroy in protected worlds"
-  wp.cmd.border:
+  sc.cmd.border:
     default: op
     description: "Allow contfol of border functionality"
-  wp.cmd.pvp:
+  sc.cmd.pvp:
     default: op
-    description: "Allow PvP controls"
-  wp.cmd.noexplode:
+    description: "PvP erlauben"
+  sc.cmd.noexplode:
     default: op
     description: "Allow NoExplode controls"
-  wp.cmd.limit:
+  sc.cmd.limit:
     default: op
     description: "Allow control to limit functionality"
-  wp.cmd.wpmotd:
+  sc.cmd.wpmotd:
     default: op
     description: "Allow editing the motd"
-  wp.cmd.addrm:
+  sc.cmd.addrm:
     default: op
     description: "Allow modifying the auth list"
-  wp.cmd.unbreakable:
+  sc.cmd.unbreakable:
     default: op
     description: "Modify unbreakable block list"
-  wp.cmd.bancmd:
+  sc.cmd.bancmd:
     default: op
-    description: "Ban/unban commands"
-  wp.cmd.banitem:
+    description: "Ban/unban kommands"
+  sc.cmd.banitem:
     default: op
     description: "Ban/unban items"
-  wp.cmd.info:
+  sc.cmd.info:
     default: true
     description: "Show WP config info"
-  wp.cmd.gm:
+  sc.cmd.gm:
     default: op
     description: "Allow setting a per-world gamemode"
-  wp.cmd.gm.exempt:
+  sc.cmd.gm.exempt:
     default: false
     description: "Users with this permissions will ignore per world gm"
